@@ -1,0 +1,14 @@
+/**
+ * index.css
+ * 
+ * index.html的CSS文件。
+ */
+
+.list-border {
+    width: 100%;
+
+    background-color: white;
+    border-radius: 5px;
+
+    margin: 0 auto;
+}
