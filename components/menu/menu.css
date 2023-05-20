@@ -1,0 +1,85 @@
+/**
+ * menu.css
+ * 
+ * 定义网页菜单样式。
+ */
+
+
+#menu {
+    position: sticky;
+    position: -webkit-sticky;  /* Safari */
+    top: 5px;
+
+    background-color: var(--menu-background-color);
+    background: radial-gradient(
+        circle at var(--mouse-x) var(--mouse-y),
+        var(--menu-background-gradient-color),
+        var(--menu-background-color));
+    
+    border-radius: 5px;
+
+    height: 45px;
+}
+
+#avater {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    left: 5px;
+    top: 1%;
+    
+    border-radius: 50%;
+
+    transition: 
+        width var(--menu-avater-hover-time),
+        height var(--menu-avater-hover-time),
+        left var(--menu-avater-hover-time),
+        top var(--menu-avater-hover-time),
+        box-shadow var(--menu-avater-hover-time);
+}
+
+#avater:hover {
+    width: 42px;
+    height: 42px;
+    left: 4px;
+    top: -3px;
+    
+    box-shadow: 2px 2px 5px #888888;
+}
+
+.menu-button {
+    position: relative;
+    top: -12px;
+    left: 15px;
+
+    border: 0;
+    background: 0;
+
+    font-size: 1.5em;
+    color: var(--menu-button-font-color);
+
+    cursor: pointer;
+
+    transition:
+        font-size var(--menu-button-hover-time),
+        text-shadow var(--menu-button-hover-time);
+}
+
+.menu-button:hover {
+    font-size: 1.7em;
+    text-shadow: 5px 5px 5px #888888;
+}
+
+.menu-button:active {
+    font-size: 1.4em;
+}
+
+body {
+    --menu-background-color: rgb(103, 187, 255);
+    --menu-background-gradient-color: rgb(0, 132, 255);
+
+    --menu-avater-hover-time: 0.5s;
+
+    --menu-button-font-color: rgb(0, 55, 175);
+    --menu-button-hover-time: 0.5s;
+}

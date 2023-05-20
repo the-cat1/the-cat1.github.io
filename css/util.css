@@ -1,0 +1,28 @@
+/**
+ * util.css
+ * 
+ * 基础CSS。
+ */
+
+
+h1 {
+    font-size: 6em;
+}
+
+.subheading {
+    font-size: 3em;
+}
+
+/* 水平分割线 */
+.hd-line {
+    width: 98%;
+    height: 2px;
+    border-radius: 1px;
+    margin: 0 auto;
+    background-color: darkgrey;
+    
+}
+
+body {
+    background-color: lightblue;
+}

@@ -1,0 +1,41 @@
+/**
+ * list.css
+ */
+
+
+div.list {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+
+    width: 100%;
+    height: 256px;
+}
+
+div.list-card {
+    width: 128px;
+    margin: 25px;
+    text-align: center;
+}
+
+button.list-item {
+    border: 0;
+    background: 0;
+
+    transition: transform var(--list-item-hover-time);
+}
+
+button.list-item:hover {
+    transform: scale(125%, 125%);
+}
+
+div.list-divide-line {
+    width: 2px;
+    height: 75%;
+    background-color: darkgray;
+    border-radius: 1px;
+}
+
+body {
+    --list-item-hover-time: 0.5s;
+}

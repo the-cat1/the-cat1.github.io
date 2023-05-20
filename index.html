@@ -7,12 +7,44 @@
     <title>the-cat1 - 主页</title>
     <link rel="icon" href="resources/images/icon.png" sizes="256x256">
 
-    <link rel="stylesheet" href="styles/menu.css">
+    <script src="javascripts/util.js"></script>
+    <script src="javascripts/css.js"></script>
+    <script src="components/menu/menu.js"></script>
+
+    <link rel="stylesheet" href="components/list/list.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div id="menu">
-        <a href="index.html"><img id="avater" src="resources/images/the-cat1.png" alt="the-cat1的头像"></a>
-        <a id="menu-a" href="https://github.com/the-cat1">Github主页</a>
+    <div id="menu"></div>
+
+    <h1>欢迎来到我的主页！😜</h1>
+    <span class="subheading">这儿有许多好玩的东西！</span>
+
+    <div class="list-border">
+        <h2>项目简介</h2>
+        <div class="hd-line"></div>
+
+        <div class="list">
+            <div class="list-card">
+                <button class="list-item">
+                    <h3>UselessOS</h3>
+                    一个没用的命令操作系统，建立在系统上的系统。
+                </button>
+            </div>
+
+            <div class="list-divide-line"></div>
+            
+            <div class="list-card">
+                <button class="list-item">
+                    <h3>更多……</h3>
+                    网站还没做好，请敬请期待……<del>(能做多好,还敬请期待)</del>
+                </button>
+            </div>
+        </div>
     </div>
+
+    <script type="text/javascript">
+        initMenu();
+    </script>
 </body>
 </html>
