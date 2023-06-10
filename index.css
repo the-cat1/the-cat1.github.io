@@ -12,3 +12,9 @@
 
     margin: 0 auto;
 }
+
+.list-title {
+    position: relative;
+    left: 10px;
+    top: 8px;
+}
